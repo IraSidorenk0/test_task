@@ -57,7 +57,11 @@ export class RegistrationComponent implements OnInit, OnDestroy {
     // Prepare registration data
     let registrationData = {
       login: this.registrationForm.get('email')?.value,
-      password: this.registrationForm.get('password')?.value
+      password: this.registrationForm.get('password')?.value,
+      profile: {
+        name: 'Test User',
+        email: this.registrationForm.get('email')?.value
+      }
     };
 
     // Make API call

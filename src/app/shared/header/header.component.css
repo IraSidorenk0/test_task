@@ -3,6 +3,8 @@
     src: url(../../../assets/fonts/WorkSans-Regular.ttf);
 }
 header {
+    display: flex;
+    align-items: center;
     font-family: "Work Sans";
     position: fixed;
     width: 100%;

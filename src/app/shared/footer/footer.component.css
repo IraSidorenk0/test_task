@@ -15,6 +15,7 @@ footer {
     bottom: 0;
     left: 0;
     height: 60px;
+    max-width: -moz-available;
     .uppercase {
         text-transform: uppercase;
     }
