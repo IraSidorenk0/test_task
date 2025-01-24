@@ -1,0 +1,39 @@
+     
+    <h1 class="register-account-h1">Register an account</h1> 
+    <div class="d-flex flex-column align-items-center justify-content-center">
+        <div class="form-div">
+            <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <input 
+                        type="email" 
+                        formControlName="email" 
+                        placeholder="Email" 
+                        class="form-control"
+                        [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+                    >
+                    <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                        <div *ngIf="f['email'].errors['required']">Email is required</div>
+                        <div *ngIf="f['email'].errors['email']">Please enter a valid email address</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input 
+                        type="password" 
+                        formControlName="password" 
+                        placeholder="Password" 
+                        class="form-control"
+                        [ngClass]="{ 'is-invalid': submitted && f['password'].errors }"
+                    >
+                    <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+                        <div *ngIf="f['password'].errors['required']">Password is required</div>
+                        <div *ngIf="f['password'].errors['minlength']">Password must be at least 8 characters</div>
+                        <div *ngIf="f['password'].errors['pattern']">Password must include letters, numbers, and special characters</div>
+                    </div>
+                </div>
+                <button class="proceed full-width" type="submit">Proceed</button>
+                <div class="error-section">
+                    <p></p>
+                </div>
+            </form>
+        </div>
+    </div>

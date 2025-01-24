@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Work Sans";
+    src: url(../../../assets/fonts/WorkSans-Regular.ttf);
+}
+footer {
+    font-family: "Work Sans";
+    position: fixed;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    .uppercase {
+        text-transform: uppercase;
+    }
+    a {
+        color: #fff;
+    }
+}

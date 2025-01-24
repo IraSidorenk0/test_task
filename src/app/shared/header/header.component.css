@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Work Sans";
+    src: url(../../../assets/fonts/WorkSans-Regular.ttf);
+}
+header {
+    font-family: "Work Sans";
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    padding: 0 16px;
+    left: 0;
+    height: 60px;
+    font-weight: 600;
+    span {
+        text-transform: uppercase;
+        font-size: 23px;
+    }
+    img {
+        filter: invert(1);
+        position: relative;
+        top: -1px;
+    }
+}
