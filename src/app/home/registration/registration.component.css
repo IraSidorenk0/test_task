@@ -40,7 +40,12 @@ input::placeholder {
     padding: 13px 18px;
     min-width: 350px;
 } 
+.error-section {
+    color: #FF0808;
+}
 .register-account-h1 {
     width: 350px;
+    position: absolute;
+    top: 15vh;
     font-family: "SF UI Display";
 }

@@ -45,7 +45,6 @@ export class AuthService {
         }
       }),
       catchError(error => {
-        console.log(error);
         let errorResponse: RegistrationResponse = {
           status: false,
           error: error.error?.message || 'Registration failed. Please try again.'
