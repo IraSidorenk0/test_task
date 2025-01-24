@@ -2,6 +2,11 @@ h1 {
     color: #fff;
     font-size: 46px;
     font-weight: bold;
+    width: 350px;
+    position: absolute;
+    top: 15vh;
+    font-family: "SF UI Display";
+    line-height: .9;
 }
 input {
     background-color: #F5F5F5;
@@ -42,10 +47,4 @@ input::placeholder {
 } 
 .error-section {
     color: #FF0808;
-}
-.register-account-h1 {
-    width: 350px;
-    position: absolute;
-    top: 15vh;
-    font-family: "SF UI Display";
 }
